@@ -13,7 +13,8 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: false }))
 app.set('view engine', 'ejs')
-app.use(cookieParser)
+app.use(cookieParser())
+app.use(require('cors')())
 
 // mongodb setup
 mongoose.connect(process.env.MONGODB_URI)

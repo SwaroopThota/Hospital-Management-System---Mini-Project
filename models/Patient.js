@@ -28,7 +28,7 @@ const PatientSchema = new mongoose.Schema({
 	bloodgroup: {
 		type: String,
 	},
-	scheduledAppointments: {
+	appointments: {
 		type: [mongoose.Schema.Types.ObjectId],
 		ref: 'AppointmentModel',
 	},

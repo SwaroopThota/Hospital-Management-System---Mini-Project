@@ -5,10 +5,6 @@ const DoctorSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	gender: {
-		type: String,
-		required: true,
-	},
 	email: {
 		type: String,
 		required: true,
@@ -27,6 +23,6 @@ const DoctorSchema = new mongoose.Schema({
 	},
 })
 
-const DoctorModel = new mongoose.model('DoctorModel', DoctorSchema)
+const DoctorModel = new mongoose.model('doctor', DoctorSchema)
 
 module.exports = DoctorModel

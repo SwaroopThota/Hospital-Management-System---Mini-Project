@@ -12,7 +12,7 @@ const AppointmentSchema = new mongoose.Schema({
 		ref: 'DoctorModel',
 	},
 	date: {
-		type: Date,
+		type: String,
 		required: true,
 	},
 	concern: {
@@ -32,7 +32,7 @@ const AppointmentSchema = new mongoose.Schema({
 })
 
 const AppointmentModel = new mongoose.model(
-	'AppointmentModel',
+	'appointment',
 	AppointmentSchema
 )
 
